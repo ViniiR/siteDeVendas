@@ -1,7 +1,7 @@
 {
   "name": "projeto1",
   "version": "1.0.0",
-  "description": "",
+  "description": "meu primeiro site no pc",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,5 +11,5 @@
     "url": "https://github.com/ViniiR/siteDeVendas"
   },
   "author": "Vini",
-  "license": "ISC"
+  "license": "MIT"
 }
