@@ -37,24 +37,22 @@ header .headerButtonRow {
     gap: 3px;
 }
 
-.headerButtonRow button:not(.menuButton) {
-    width: 30px;
-    height: 30px;
-    border-radius: 5px;
-    background-color: rgb(157, 154, 154);
-    border: 1px solid rgb(128, 128, 128);
-}
-
-.headerButtonRow .menuButton {
+.headerButtonRow button{
     background-color: transparent;
     border: none;
+}
+
+.favoritos, .carrinho {
+    height: 30px;
+    width: 30px;
 }
 
 .headerButtonRow .menuButton > span {
     width: 25px;
     height: 4px;
     display: block;
-    background-color: lightgray;
+    background-color: #cccccc;
+    border-radius: 5px;
 }
 
 .headerButtonRow .shopName {
@@ -100,12 +98,14 @@ header .headerButtonRow {
     background-color: rgb(55, 55, 169);
     list-style: none;
     color: rgb(228, 225, 225);
-    min-width: 90px;
     text-align: center;
     padding: 7px;
     display: inline-block;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.123);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     transition: transform ease .5s, background-color ease .5s, color ease .5s;
 }
 
@@ -126,7 +126,6 @@ header .headerButtonRow {
     display: flex;
     flex-flow: row;
     align-items: center;
-    gap: 40px;
 }
 
 .scrollLateralProdutos::-webkit-scrollbar{
@@ -145,6 +144,11 @@ header .headerButtonRow {
     background-color: rgba(142, 141, 141, 0.507);
 }
 
+.scrollLateralProdutos > article {
+    text-align: center;
+    margin: 0px 10px;
+}
+
 .scrollLateralProdutos > .produtosScroll {
     width: 90px;
     height: 90px;
@@ -157,10 +161,8 @@ header .headerButtonRow {
     background-color: white;
     transition: transform ease .5s, border ease .5s;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.138);
-}
-
-.scrollLateralProdutos > article {
-    text-align: center;
+    height: 90px;
+    width: 90px;
 }
 
 .scrollLateralProdutos .scrollImgContainer:hover {
@@ -195,35 +197,14 @@ header .headerButtonRow {
     margin: 5px 0px;
 }
 
+.productNode > img {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.116);
+    border-radius: 10px;
+}
+
 footer {
     background-color: gray;
     height: 100px;
     padding: 10px;
     color: rgb(43, 43, 43);
-}
-
-@media (min-width: 480px) {
-    .scrollImgContainer {
-        height: 90px;
-        width: 90px;
-    }
-
-    .productsNode > .productNode {
-        width: 48%;
-    }
-}
-
-@media (min-width: 768px) {
-    .scrollImgContainer {
-        height: 110px;
-        width: 110px;
-    }
-
-    .scrollImgContainer > img {
-        height: 110px;
-    }
-
-    .productsNode > .productNode {
-        width: 23%;
-    }
 }
