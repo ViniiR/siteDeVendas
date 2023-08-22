@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-header > .headerContainer{
-    
+.searchBarDivision #magGlassIcon {
+    height: 23px;
+    width: 23px;
 }
 
 .searchMenu {
@@ -13,6 +14,14 @@ header > .headerContainer{
 .favoritos, .carrinho {
     height: 25px;
     width: 25px;
+}
+
+.productsNode > .productNode {
+    width: 47%;
+}
+
+.searchMenuUl li {
+    font-size: 0.8em;
 }
 
 @media (max-width: 425px){
@@ -28,6 +37,5 @@ header > .headerContainer{
 }
 
 
-.productsNode > .productNode {
-    width: 150px;
-}
+
+

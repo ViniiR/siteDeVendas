@@ -1,5 +1,74 @@
 @charset "UTF-8";
 
-.productsNode {
+header .headerContainer {
+    height: 170px;
+}
 
+.headerButtonRow .shopName {
+    font-size: 2.15em;
+}
+
+.headerButtonRow .innerButtonRow {
+    width: 100px;
+}
+
+.favoritos, .carrinho {
+    width: 40px;
+    height: 40px;
+}
+
+.headerButtonRow .menuButton > span {
+    width: 50px;
+    height: 9px;
+    margin-bottom: 2px;
+    border-radius: 4px;
+    margin-top: 1px;
+}
+
+.searchBarDivision #query {
+    height: 30px;
+    width: 600px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    padding-left: 20px;
+}
+
+.searchBarDivision #magGlassIcon {
+    height: 22px;
+    left: -40px;
+    width: 22px;
+}
+
+
+.searchMenuUl > li {
+    width: 150px;
+    font-size: 1.15em;
+}
+
+.mainBodySect > .container > .scrollLateralProdutos {
+    height: 190px;
+}
+
+.scrollLateralProdutos > article {
+    margin: 0px 15px;
+}
+
+.scrollLateralProdutos > article > .scrollImgContainer {
+    height: 110px;
+    width: 110px;
+}
+
+.scrollLateralProdutos > article > .scrollNames {
+    font-size: 1.4em;
+    width: 100px;
+}
+
+.scrollLateralProdutos > article > figcaption {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.productsNode > .productNode {
+    width: 33%;
 }
