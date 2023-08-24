@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+header .headerContainer {
+    height: 160px;
+}
+
 .searchBarDivision #magGlassIcon {
     height: 23px;
     width: 23px;

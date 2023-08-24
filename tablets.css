@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 header .headerContainer {
-    height: 170px;
+    height: 190px;
 }
 
 .headerButtonRow .shopName {
@@ -17,16 +17,8 @@ header .headerContainer {
     height: 40px;
 }
 
-.headerButtonRow .menuButton > span {
-    width: 50px;
-    height: 9px;
-    margin-bottom: 2px;
-    border-radius: 4px;
-    margin-top: 1px;
-}
-
 .searchBarDivision #query {
-    height: 30px;
+    height: 50px;
     width: 600px;
     border-radius: 50px;
     font-size: 1.1em;

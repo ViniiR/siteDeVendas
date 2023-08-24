@@ -55,18 +55,6 @@ header .headerButtonRow {
     transform: translate(-2px,-3px);
 }
 
-.menuButton span:hover {
-    background-color: black;
-}
-
-.headerButtonRow .menuButton > span {
-    width: 25px;
-    height: 4px;
-    display: block;
-    background-color: #cccccc;
-    border-radius: 5px;
-}
-
 .headerButtonRow .shopName {
     font: 1.6em 'Comfortaa', cursive;
     color: rgb(38, 37, 37);
@@ -81,7 +69,7 @@ header .headerButtonRow {
 
 .searchBarDivision #query {
     width: 450px;
-    height: 20px;
+    height: 40px;
     background-color: rgb(112, 108, 108);
     color: white;
     border-radius: 20px;
