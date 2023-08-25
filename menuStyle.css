@@ -21,6 +21,7 @@
     gap: var(--gap);
     width: max-content;
     cursor: pointer;
+    z-index: 999999;
 }
 
 .menuButton::after,
@@ -33,6 +34,7 @@
     border-radius: 20px;
     transform-origin: left center;
     transition: rotate ease-in-out .5s, opacity ease-in-out .5s;
+    z-index: 9999;
 }
 
 .menuButton input {
@@ -60,25 +62,31 @@
     width: 0px;
 }
 
+.xDivision {
+    height: calc(var(--button-height) * 2);
+}
+
 .sideBar {
-    position: absolute;
-    margin-top: calc(var(--button-height) + 1rem);
+    position: fixed;
+    margin-top: 0;
+    transform: translateX(-100%);
     left: 0px;
-    padding: 10px;
     background-color: rgb(90, 90, 90);
-    width: 30vw;
     height: 100vh;
     z-index: 9999;
 }
 
 .sideBar > section {
-    position: sticky;
     height: 100%;
     width: 100%;
     top: 0;
     left: 0;
 }
 
-.sideBar > section > ul{
+.sideBar > section > .contentArticle {
+    padding: 10px;
+}
+
+.sideBar section ul{
     list-style-type: none;
 }

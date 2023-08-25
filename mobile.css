@@ -28,6 +28,10 @@ header .headerContainer {
     font-size: 0.8em;
 }
 
+.sideBar {
+    width: 50vw;
+}
+
 @media (max-width: 425px){
     .searchMenuUl li {
         width: 70px;

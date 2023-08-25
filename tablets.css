@@ -64,3 +64,7 @@ header .headerContainer {
 .productsNode > .productNode {
     width: 33%;
 }
+
+.sideBar {
+    width: 30vw;
+}
