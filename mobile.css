@@ -4,6 +4,10 @@ header .headerContainer {
     height: 160px;
 }
 
+.searchBarDivision #query {
+    height: 40px;
+}
+
 .searchBarDivision #magGlassIcon {
     height: 23px;
     width: 23px;
@@ -28,10 +32,6 @@ header .headerContainer {
     font-size: 0.8em;
 }
 
-.sideBar {
-    width: 50vw;
-}
-
 @media (max-width: 425px){
     .searchMenuUl li {
         width: 70px;
@@ -42,8 +42,10 @@ header .headerContainer {
     .searchMenuUl li {
         width: 55px;        
     }
+
+    .searchBarDivision #magGlassIcon {
+        width: 30px;
+        height: 30px;
+        left: -30px;
+    }
 }
-
-
-
-

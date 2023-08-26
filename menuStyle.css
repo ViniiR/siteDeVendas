@@ -6,104 +6,41 @@
     box-sizing: border-box;
 }
 
-:root {
-    --span-width: 35px;
-    --span-height: 5px;
-    --foreground: #cccccc;
-    --gap: 5px;
-    --button-height: calc(var(--span-height) * 3 + var(--gap) * 2);
-}
-
 .menuButton {
-    --x-width: calc(var(--button-height) * 1.41421356237);
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
     width: max-content;
     height: max-content;
-    cursor: pointer;
-    z-index: 999999;
-    padding: 5px;
-    position: absolute;
-    left: 105%;
-    background-color: rgb(90, 90, 90);
+}
+
+.menuButton > span {
+    width: 30px;
+    height: 5px;
+    display: inline-block;
     border-radius: 5px;
-}
-
-.menuButton:has(input:checked) {
-    left: 15px;
-}
-
-.menuButton::after,
-.menuButton::before,
-.menuButton input {
-    content: "";
-    width: var(--span-width);
-    height: var(--span-height);
-    background-color: var(--foreground) !important;
-    border-radius: 20px;
-    transform-origin: left center;
-    transition: rotate ease-in-out .5s, opacity ease-in-out .5s;
-    z-index: 9999;
-}
-
-.menuButton input {
-    appearance: none;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    pointer-events: none;
-}
-
-.menuButton:has(input:checked)::before {
-    rotate: 45deg;
-    width: var(--x-width);
-    translate: 0 calc(var(--span-height) / -2);
-}
-
-.menuButton:has(input:checked)::after {
-    width: var(--x-width);
-    rotate: -45deg;
-    translate: 0 calc(var(--span-height) / 2);
-}
-
-.menuButton input:checked {
-    opacity: 0;
-    width: 0px;
-    width: 10px;
-}
-
-.xDivision {
-    height: calc(var(--button-height) * 2);
-    padding: 10px;
+    background-color: #ccc;
 }
 
 .sideBar {
-    position: fixed;
-    margin-top: 0;
-    transform: translateX(-100%);
-    left: 0px;
-    background-color: rgb(90, 90, 90);
-    height: 100vh;
-    z-index: 9999;
-    transition: transform ease .3s;
-}
-
-.sideBar:has(input:checked) {
-    transform: translateX(0);
-}
-
-.sideBar > section {
-    height: 100%;
+    position: absolute;
+    height: 200px;
+    z-index: 999;
     width: 100%;
-    top: 0;
-    left: 0;
-}
-
-.sideBar > section > .contentArticle {
+    background-color: gray;
+    top: 45px;
     padding: 10px;
 }
 
-.sideBar section ul{
-    list-style-type: none;
+.xDivision {
+
+}
+
+.contentArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contentArticle ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
 }
