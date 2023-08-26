@@ -9,9 +9,9 @@ input.addEventListener("click", function () {
         sideBar.style.transform === "" ||
         sideBar.style.transform === "translateX(-100%)"
     ) {
-        sideBar.style.transform = "translateX(0%)";
+        this.style.position = "fixed";
     } else {
-        sideBar.style.transform = "translateX(-100%)";
+        this.style.position = "";
     }
-    console.log(sideBar.style.transform);
+    console.log(this.style.position);
 });

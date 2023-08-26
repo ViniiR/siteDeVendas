@@ -20,6 +20,7 @@ header .headerButtonRow {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
+    height: max-content;
 }
 
 .headerButtonRow .innerButtonRow {
@@ -53,6 +54,11 @@ header .headerButtonRow {
 .innerButtonRow a:hover {
     fill: #3974ff;
     transform: translate(-2px,-3px);
+}
+
+.nameContainer {
+    text-align: center;
+    width: 100%;
 }
 
 .headerButtonRow .shopName {
